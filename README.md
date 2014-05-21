@@ -9,7 +9,7 @@ How to Use:
 2. [Download the GitHub ZIP distribution of this repo here](https://github.com/markwilliams970/rally-subadminme/archive/master.zip).
 3. Move the the ZIP file to: /Users/myusername/Documents/
 4. Double click the ZIP file to extract it. This will create the following folder: /Users/myusername/Documents/rally-subadminme-master
-5. Use your favorite text editor to update the MY_USERNAME and MY_PASSWORD variables, located in the `subadminme.sh` script:
+5. Use your favorite text editor to update the MY_USERNAME, MY_PASSWORD, and INSTALL_DIR variables, located in the `subadminme.sh` script:
 ```
 MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
