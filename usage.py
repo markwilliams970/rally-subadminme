@@ -5,7 +5,7 @@
 #  usage.py -- Get Rally Usage Report
 #
 USAGE = """
-Usage: python usage.py -s SubID -u Username -p Password
+Usage: python usage.py -s SubID -d Days -u Username -p Password
 """
 #################################################################################################
 
@@ -26,15 +26,18 @@ errout = sys.stderr.write
 
 def main(argv):
 
-	opts, args = getopt.getopt(argv,"s:u:p:")
+	opts, args = getopt.getopt(argv,"s:d:u:p:")
 
 	subscription_id=''
 	my_username=''
 	my_password=''
+	ndays=''
 
 	for opt, arg in opts:
 		if opt == '-s':
 			subscription_id = arg
+		elif opt == '-d':
+			ndays = arg
 		elif opt == '-u':
 			my_username = arg
 		elif opt == '-p':
@@ -47,7 +50,7 @@ def main(argv):
 	# Construct Usage URL
 	datetime_format_string = "%m/%d/%Y"
 	end_string = datetime.datetime.now().strftime(datetime_format_string)
-	yesterday_date = date.today()-timedelta(days=1)
+	yesterday_date = date.today()-timedelta(days=int(ndays))
 	start_string = yesterday_date.strftime(datetime_format_string)
 
 	usage_endpoint = "/slm/admin/tools/usageReportCSV.sp?startDate=%s&endDate=%s&subscriptionId=%s" % (start_string, end_string, subscription_id )
