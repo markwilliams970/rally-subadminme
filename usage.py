@@ -27,7 +27,7 @@ errout = sys.stderr.write
 def main(argv):
 
 	opts, args = getopt.getopt(argv,"s:u:p:")
-	
+
 	subscription_id=''
 	my_username=''
 	my_password=''
@@ -43,19 +43,19 @@ def main(argv):
 	rally_host = "us1.rallydev.com"
 	authentication_endpoint = "slm/webservice/v2.0/security/authorize"
 	authentication_url="https://%s/%s" % (rally_host, authentication_endpoint)
-	
+
 	# Construct Usage URL
 	datetime_format_string = "%m/%d/%Y"
 	end_string = datetime.datetime.now().strftime(datetime_format_string)
 	yesterday_date = date.today()-timedelta(days=1)
 	start_string = yesterday_date.strftime(datetime_format_string)
 
-	usage_endpoint = "/slm/admin/tools/usageReportCSV.sp?startDate=%s&endDate=%s&subscriptionId=%s" % (start_string, end_string, subscription_id )		
+	usage_endpoint = "/slm/admin/tools/usageReportCSV.sp?startDate=%s&endDate=%s&subscriptionId=%s" % (start_string, end_string, subscription_id )
 	usage_url = "https://%s/%s" % (rally_host, usage_endpoint)
 
 	# Cookie Manager
-	cj = cookielib.CookieJar()
-	url_opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj),urllib2.HTTPHandler())
+	cookiejar = cookielib.CookieJar()
+	url_opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookiejar),urllib2.HTTPHandler())
 	authentication_request = urllib2.Request(authentication_url)
 
 	# Base64-encode credentials and set headers
@@ -72,8 +72,8 @@ def main(argv):
 	usageHttpReq = urllib2.Request(usage_url, pData, usage_headers)
 	usage_response = url_opener.open(usageHttpReq)
 	usage_content = usage_response.read()
-	
+
 	print usage_content
 
 if __name__ == '__main__':
-    main(sys.argv[1:])	
+    main(sys.argv[1:])
