@@ -11,5 +11,5 @@ PYTHON="/usr/bin/python"
 echo "Subscription Admins for SubID ${SUBSCRIPTION_ID}"
 echo "================================================"
 
-${PYTHON} usage.py -s ${SUBSCRIPTION_ID} -u ${MY_USERNAME} -p ${MY_PASSWORD} | \
+${PYTHON} ${INSTALL_DIR}/usage.py -s ${SUBSCRIPTION_ID} -u ${MY_USERNAME} -p ${MY_PASSWORD} | \
     awk -F '",' -f ${INSTALL_DIR}/parseUsage.awk
