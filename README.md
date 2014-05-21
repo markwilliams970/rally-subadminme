@@ -28,9 +28,12 @@ alias subadminme="/Users/myusername/Documents/rally-subadminme-master/subadminme
 12. CTRL-O
 13. Exit nano:
 14. CTRL-X
+
+![save_bash_profile](https://raw.githubusercontent.com/markwilliams970/rally-subadminme/master/images/screenshot2.png)
+
 15. $ source ~/.bash_profile 
-9. subadminme 209
-10. Subadmin list bliss ensues! From here on out, all you have to do is open your Mac Terminal, and you've got instant access to subadminme:
+16. subadminme 209
+17. Subadmin list bliss ensues! From here on out, all you have to do is open your Mac Terminal, and you've got instant access to subadminme:
 
 ![Screenshot](https://raw.githubusercontent.com/markwilliams970/rally-subadminme/master/images/screenshot1.png)
 
