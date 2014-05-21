@@ -13,6 +13,7 @@ INSTALL_DIR="/Users/myusername/Documents/rally-subadminme-master"
 
 PYTHON="/usr/bin/python"
 
+echo
 echo "Subscription Admins for SubID ${SUBSCRIPTION_ID}"
 echo "================================================"
 
