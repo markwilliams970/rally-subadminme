@@ -53,7 +53,7 @@ def main(argv):
 	yesterday_date = date.today()-timedelta(days=int(ndays))
 	start_string = yesterday_date.strftime(datetime_format_string)
 
-	usage_endpoint = "/slm/admin/tools/usageReportCSV.sp?startDate=%s&endDate=%s&subscriptionId=%s" % (start_string, end_string, subscription_id )
+	usage_endpoint = "slm/admin/tools/usageReportCSV.sp?startDate=%s&endDate=%s&subscriptionId=%s" % (start_string, end_string, subscription_id )
 	usage_url = "https://%s/%s" % (rally_host, usage_endpoint)
 
 	# Cookie Manager
