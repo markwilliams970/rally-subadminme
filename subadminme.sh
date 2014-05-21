@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -z "$1" ]; then
+    echo "Usage: subadminme.sh 209"
+    exit
+fi
+
 SUBSCRIPTION_ID=$1
 
 MY_USERNAME="user@company.com"
