@@ -7,22 +7,22 @@ How to Use:
 
 1. No pre-requisites! Works on a vanilla Mac with no additional gems, libs, or anything else needed!
 2. [Download the GitHub ZIP distribution of this repo here](https://github.com/markwilliams970/rally-subadminme/archive/master.zip).
-3. In each step of the following section, always replace myusername with your actual Mac login ID.
-3. Move the the ZIP file to: /Users/myusername/Documents/
-4. Double click the ZIP file to extract it. This will create the following folder: /Users/myusername/Documents/rally-subadminme-master
-5. Use your favorite text editor to update the MY_USERNAME, MY_PASSWORD, and INSTALL_DIR variables, located in the `subadminme.sh` script:
+3. In each step of the following section, always replace mydomainusername with your actual Mac login ID.
+3. Move the the ZIP file to: /Users/mydomainusername/Documents/
+4. Double click the ZIP file to extract it. This will create the following folder: /Users/mydomainusername/Documents/rally-subadminme-master
+5. Use your favorite text editor to update the MY_USERNAME, MY_PASSWORD, and INSTALL_DIR variables, located in the `subadminme.sh` script (these are your super-user credentials):
 ```
 MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
-INSTALL_DIR="/Users/myusername/Documents/rally-subadminme-master"
+INSTALL_DIR="/Users/mydomainusername/Documents/rally-subadminme-master"
 ```
 6. Note that we had to escape the special character $ by using \$ in the password, since this has a special meaning in the bash shell. Take care to escape any special characters in your password.
 7. Add an alias for subadminme:
 8. Open your mac terminal window.
 9. nano ~/.bash_profile
-10. Add the following line to this file (replacing myusername with your actual user id):
+10. Add the following line to this file (replacing mydomainusername with your actual Mac/domain user id):
 <pre>
-alias subadminme="/Users/myusername/Documents/rally-subadminme-master/subadminme.sh"
+alias subadminme="/Users/mydomainusername/Documents/rally-subadminme-master/subadminme.sh"
 </pre>
 
 11. Save the File:
