@@ -27,14 +27,15 @@ alias subadminme="/Users/mydomainusername/Documents/rally-subadminme-master/suba
 
 11. Save the File:
 12. CTRL-O
-13. Exit nano:
-14. CTRL-X
+13. Hit RETURN
+14. Exit nano:
+15. CTRL-X
 
 ![save_bash_profile](https://raw.githubusercontent.com/markwilliams970/rally-subadminme/master/images/screenshot2.png)
 
-15. $ source ~/.bash_profile 
-16. subadminme 209
-17. Subadmin list bliss ensues! From here on out, all you have to do is open your Mac Terminal, and you've got instant access to subadminme:
+16. $ source ~/.bash_profile 
+17. subadminme 209
+18. Subadmin list bliss ensues! From here on out, all you have to do is open your Mac Terminal, and you've got instant access to subadminme:
 
 ![Screenshot](https://raw.githubusercontent.com/markwilliams970/rally-subadminme/master/images/screenshot1.png)
 
@@ -44,4 +45,3 @@ Subscription Admins for SubID 209
 Subadmin One:    subadmin1@company.com
 Subadmin Two:    subadmin2@company.com
 </pre>
-
