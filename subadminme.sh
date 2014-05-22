@@ -18,4 +18,4 @@ echo "Subscription Admins for SubID ${SUBSCRIPTION_ID}"
 echo "================================================"
 
 ${PYTHON} ${INSTALL_DIR}/usage.py -s ${SUBSCRIPTION_ID} -d 1 -u ${MY_USERNAME} -p ${MY_PASSWORD} | \
-    awk -F '",' -f ${INSTALL_DIR}/parseUsage.awk
+    awk -F '",' -f ${INSTALL_DIR}/parseUsage.awk | sort
