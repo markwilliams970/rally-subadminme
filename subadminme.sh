@@ -9,7 +9,7 @@ SUBSCRIPTION_ID=$1
 
 MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
-INSTALL_DIR="/Users/myusername/Documents/rally-subadminme-master"
+INSTALL_DIR="/Users/mydomainusername/Documents/rally-subadminme-master"
 
 PYTHON="/usr/bin/python"
 
