@@ -16,7 +16,7 @@ MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
 INSTALL_DIR="/Users/mydomainusername/Documents/rally-subadminme-master"
 ```
-6. Note that we had to escape the special character $ by using \$ in the password, since this has a special meaning in the bash shell. Take care to escape any special characters in your password.
+6. Note that we had to escape the special character $ by using \$ in the password, since this has a special meaning in the bash shell. Take care to escape any instance of $ in your password.
 7. Add an alias for subadminme:
 8. Open your mac terminal window.
 9. nano ~/.bash_profile
