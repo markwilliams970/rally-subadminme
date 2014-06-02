@@ -20,9 +20,10 @@ INSTALL_DIR="/Users/mydomainusername/Documents/rally-subadminme-master"
 7. Add an alias for subadminme:
 8. Open your mac terminal window.
 9. nano ~/.bash_profile
-10. Add the following line to this file (replacing mydomainusername with your actual Mac/domain user id):
+10. Add the following two lines to this file (replacing mydomainusername with your actual Mac/domain user id):
 <pre>
 alias subadminme="/Users/mydomainusername/Documents/rally-subadminme-master/subadminme.sh"
+alias usageme="/Users/mydomainusername/Documents/rally-subadminme-master/usageme.sh"
 </pre>
 
 11. Save the File:
