@@ -10,7 +10,7 @@ How to Use:
 3. In each step of the following section, always replace mydomainusername with your actual Mac login ID.
 3. Move the the ZIP file to: /Users/mydomainusername/Documents/
 4. Double click the ZIP file to extract it. This will create the following folder: /Users/mydomainusername/Documents/rally-subadminme-master
-5. Use your favorite text editor to update the MY_USERNAME, MY_PASSWORD, and INSTALL_DIR variables, located in the `subadminme.sh` script (these are your super-user credentials):
+5. Use your favorite text editor to update the MY_USERNAME, MY_PASSWORD, and INSTALL_DIR variables, located in the `subadminme.sh` and `usageme.sh` scripts (these are your super-user credentials):
 ```
 MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
