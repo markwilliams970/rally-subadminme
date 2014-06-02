@@ -19,6 +19,8 @@ MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
 INSTALL_DIR="/Users/mydomainusername/Documents/rally-subadminme-master"
 ```
+
+```
 usageme.sh:
 MY_USERNAME="user@company.com"
 MY_PASSWORD="top\$3cr3t"
