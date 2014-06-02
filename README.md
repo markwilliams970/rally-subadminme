@@ -61,7 +61,7 @@ Subadmin Two:    subadmin2@company.com
 19. Usage bliss ensues! All you have to do to get a Usage Report is open your Mac Terminal,
 and you've got instant access to usageme:
 
-![Screenshot](https://raw.githubusercontent.com/markwilliams970/rally-subadminme/master/images/screenshot1.png)
+![Screenshot](https://raw.githubusercontent.com/markwilliams970/rally-subadminme/master/images/screenshot3.png)
 
 <pre>
 Pulling 30-day usage report for SubscriptionID: 209
