@@ -20,5 +20,5 @@ filename="Usage_${datetimestamp}_${1}.csv"
 echo "Pulling ${2}-day usage report for SubscriptionID: ${1}"
 
 
-${PYTHON} ${INSTALL_DIR}/usage.py -s ${SUBSCRIPTION_ID} -d $2 -u ${MY_USERNAME} -p ${MY_PASSWORD} > ${filename}
+${PYTHON} ${INSTALL_DIR}/usage.py -s ${SUBSCRIPTION_ID} -d $2 -u ${MY_USERNAME} -p ${MY_PASSWORD} > /Users/mydomainusername/Desktop/${filename}
 echo "Usage report written to file: ${filename}"
