@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -z "$1" && -z "$2" ]; then
+if [ $# -ne 2 ]; then
     echo "Usage: usageme.sh 209 30"
     exit
 fi
