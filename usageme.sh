@@ -2,6 +2,7 @@
 
 if [ $# -ne 2 ]; then
     echo "Usage: usageme.sh 209 30"
+    echo "SubID=209; NumberOfDays=30"
     exit
 fi
 
